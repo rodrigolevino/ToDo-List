@@ -11,7 +11,7 @@
 
 ---
 
-## 📝 Funcionalidades
+## 🖊️ Funcionalidades
 
 - Sistema de criação de tarefas.
 - Possibilidade de marcar ou desmarcar a tarefa como concluída, além da opção de exclui-la.
@@ -21,8 +21,8 @@
 
 As principais tecnologias e ferramentas utilizadas no projeto incluem:
 
-- **React** para dividir o projeto em partes, com componentes.
-- **TypeScript** para adicionar tipagem estática ao JavaScript.
+- **[React](https://reactjs.org/)** para dividir o projeto em partes, com componentes.
+- **[TypeScript](https://www.typescriptlang.org/)** para adicionar tipagem estática ao JavaScript.
 - **CSS** para estilização personalizada.
 - **HTML** para a estrutura base.
 
@@ -50,5 +50,5 @@ Siga os passos abaixo para instalar e executar o projeto em sua máquina local:
 
 
 📝 Licença
-Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
+Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](./LICENSE) para mais informações.
 
