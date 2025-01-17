@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 1rem;
+}
+
+.tasksBox {
+  width: 46rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.createdTasks, .completedTasks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.createdTasks p {
+  color: var(--blue-default);
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.createdTasks span, .completedTasks span {
+  color: var(--gray-200);
+  background: var(--gray-400);
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.completedTasks p {
+  color: var(--purple-default);
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.taskList {
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  border-top: 1px solid var(--gray-400);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+}
+
+.taskList img {
+  width: 3.5rem;
+}
+
+.haveTaskList {
+  display: none;
+}
+
+.emptyText {
+  color: var(--gray-300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.boldEmptyText {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: bold;
+  margin: 0;
+}
+
+.notBoldEmptyText {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+@media (max-width: 390px) {
+  .boldEmptyText, .notBoldEmptyText {
+    font-size: 0.9rem;
+  }
+
+  .taskList img {
+  width: 3.15rem;
+}
+}
+
+@media (max-width: 361px) {
+  .boldEmptyText, .notBoldEmptyText {
+    font-size: 0.7rem;
+  }
+
+  .taskList img {
+  width: 2.45rem;
+}
+}
+
+.emptyTasksLocal {
+  display: none;
+}
+
+.tasksLocal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}

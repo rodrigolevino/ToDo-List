@@ -1,0 +1,120 @@
+.container {
+  background: var(--gray-500);
+  border-radius: 8px;
+  padding: 1rem;
+  max-width: 46rem;
+  max-height: 4.5rem;
+  width: 100vw;
+  box-sizing: border-box;
+  border: 1px solid var(--gray-400);
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.contentBox {
+  display: flex;
+  align-items: start;
+  gap: 0.75rem;
+}
+
+.contentBox p {
+  margin: 0;
+  line-height: 1.4;
+  font-size: 0.875rem;
+}
+
+.completedText {
+  color: var(--gray-300);
+  text-decoration:line-through;
+  transition: 0.1s ease;
+}
+
+.notCompletedText {
+  color: var(--gray-100);
+  transition: 0.1s ease;
+}
+
+.checkBox {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkBox button {
+  position: relative;
+}
+
+.checkBox button img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+.completedTask {
+  background: var(--purple-dark);
+  color: var(--gray-100);
+  border-radius: 50%;
+  width: 1.09rem;
+  height: 1.09rem;
+  cursor: pointer;
+  border: none;
+
+  transition: 0.1s ease;
+}
+
+.completedTask:hover {
+  background: var(--purple-default);
+}
+
+.notCompletedTask {
+  background: none;
+  border-radius: 50%;
+  width: 1.09rem;
+  height: 1.09rem;
+  cursor: pointer;
+  border: 2px solid var(--blue-default);
+
+  transition: 0.1s ease;
+}
+
+.notCompletedTask:hover {
+  background: rgba(30, 111, 159, 0.2);
+}
+
+.notCompletedTask img {
+  display: none;
+}
+
+.completedTask img {
+  width: 0.65rem;
+}
+
+.trashBox {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-300);
+}
+
+.trashBox:hover {
+  background: var(--gray-400);
+  border-radius: 4px;
+  color: var(--red-danger);
+}
+
+.trash {
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+@media (max-width: 756px) {
+  .container {
+    width: 95vw;
+  }
+} 
