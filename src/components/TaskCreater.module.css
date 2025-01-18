@@ -58,8 +58,8 @@
 }
 
 .taskform button:disabled {
-  opacity: 0.8;
-  cursor: not-allowed;
+  opacity: 0.9;
+  cursor: default;
 }
 
 @media (max-width: 390px) {
