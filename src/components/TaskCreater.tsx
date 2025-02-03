@@ -8,7 +8,7 @@ interface addTaskProps {
 
 export function TaskCreater({ addFunction }: addTaskProps) {
   const [textAreaValue, setTextAreaValue] = useState("")
-  let taskTextEmpty = textAreaValue.length === 0
+  const taskTextEmpty = textAreaValue.length === 0
 
   function handleNewTextChange(event: ChangeEvent<HTMLTextAreaElement>) {
     setTextAreaValue(event.target.value)
