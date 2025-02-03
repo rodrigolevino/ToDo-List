@@ -10,7 +10,7 @@ interface tasksToAddProps {
 }
 
 export function Tasks({ allTasks, removeTask }: tasksToAddProps) {
-  let haveTask = allTasks.length !== 0
+  const haveTask = allTasks.length !== 0
   const [completedTasksNumber, setCompletedTasksNumber] = useState(0)
 
   function increaseCompleted(amount: number) {
